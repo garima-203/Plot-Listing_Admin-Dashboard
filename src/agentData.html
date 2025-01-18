@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../dist/Image/logo(2).jpg">
+    <title>Estately</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> 
+    <link rel="stylesheet" href="../dist/Css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Sidebar start -->
+        <aside id="sidebar" class="js-sidebar">
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <img src="../dist/Image/logo.png" alt="">
+                    <a href="../index.html">Estately</a>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-item">
+                        <a href="../index.html" class="h5 sidebar-link">
+                            <i class="fa-list fa-solid pe-2"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="../index.html" class="collapsed h5 sidebar-link" data-bs-target="#listings"
+                            data-bs-toggle="collapse" aria-expanded="false"><i class="fa-file-lines fa-solid pe-2"></i>
+                            Listings
+                        </a>
+                        <ul id="listings" class="list-unstyled collapse sidebar-dropdown" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="./agentData.html" class="sidebar-link">Add New Listing</a>
+                            </li><a href="./agentData.html"></a>
+                            <li class="sidebar-item">
+                                <a href="../index.html" class="sidebar-link">Manage Listings </a>
+
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="../index.html" class="sidebar-link"> Pending Approvals</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="./agentData.html" class="collapsed h5 sidebar-link" data-bs-target="#agents"
+                            data-bs-toggle="collapse" aria-expanded="false"><i class="fa-sliders fa-solid pe-2"></i>
+                            Agents
+                        </a>
+                        <ul id="agents" class="list-unstyled collapse sidebar-dropdown" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="./agentData.html" class="sidebar-link">New Agent</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="./agentData.html" class="sidebar-link">View Agent Performance</a>
+                            </li> 
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="../index.html" class="collapsed h5 sidebar-link" data-bs-target="#inquiry"
+                            data-bs-toggle="collapse" aria-expanded="false"><i class="fa-envelope fas me-2"></i>
+                            Inquiries
+                        </a>
+                        <ul id="inquiry" class="list-unstyled collapse sidebar-dropdown" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="../index.html" class="sidebar-link">Active Inquiries</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="../index.html" class="sidebar-link">Resolved Inquiries</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="../index.html" class="collapsed h5 sidebar-link" data-bs-target="#customer"
+                            data-bs-toggle="collapse" aria-expanded="false"><i class="fa-regular fa-user pe-2"></i>
+                            Customers
+                        </a>
+                        <ul id="customer" class="list-unstyled collapse sidebar-dropdown" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="../index.html" class="sidebar-link">View Customer Details</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="../index.html" class="sidebar-link">Track Customer History</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="./signup.html" class="h5 sidebar-link">
+                            <i class="fa-sign-in-alt fas pe-2"></i>
+                            LogIn
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!--Sidebar end -->
+
+
+        <div class="main">
+            <nav class="bg-dark px-3 border-bottom navbar navbar-expand">
+                <button class="d-block btn btn-light d-lg-none d-md-none" id="sidebar-toggle" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar navbar-collapse">
+                    <ul class="navbar-nav">
+
+                        <li class="text-white h5 icon-badge me-3 nav-item">
+                            <a class="text-white nav-link" href="../index.html"><i class="fa-envelope fas"></i></a>
+                        </li>
+                        <li class="h5 icon-badge me-3 nav-item">
+                            <a class="text-white nav-link" href="../index.html">
+                                <i class="fa-bell fas"></i>
+                                <span class="badge">4</span>
+                            </a>
+                        </li>
+                        <li class="h5 me-3 nav-item">
+                            <a class="text-white nav-link" href="../index.html"><i class="fa-layer-group fas"></i></a>
+                        </li>
+
+                        <li class="dropdown nav-item">
+                            <a href="../index.html" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                <img src="https://img.freepik.com/premium-vector/woman-avatar-profile_444196-39758.jpg"
+                                    class="avatar" alt="">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a href="../index.html" class="dropdown-item">Profile</a>
+                                <a href="../index.html" class="dropdown-item">Setting</a>
+                                <a href="../index.html" class="dropdown-item">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+            <main class="py-2 content">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <h1>Agents Details</h1>
+                    </div>
+                    <div class="py-3 container">
+                        <!-- Date Picker Section -->
+                        <div class="d-flex justify-content-end align-items-end mb-3">
+                            <div class="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-gray-500 text-gray-200 focus:outline-none">
+                                <label for="datePicker" class="font-medium text-gray-200">Filter by Date:</label>
+                                <input type="date" id="datePicker"
+                                    class="border-0 border-gray-600">
+                            </div>
+                        </div>
+
+                        <!-- Table Section -->
+                        <div class="table-responsive">
+                            <table class="table-bordered table table-striped">
+                                <thead>
+                                    <tr class="table-dark">
+                                        <th class="text-center">Name</th>
+                                        <th class="text-center">Commission</th>
+                                        <th class="text-center">Purchase Date</th>
+                                        <th class="text-center">Contact Number</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="dataTable">
+                                    <!-- Data will be dynamically injected here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+            <footer class="bg-dark mt-auto py-3 text-center text-white">
+                © 2025 Estately- Admin Dashboard || Made by Garima Upadhyay❤️
+            </footer>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js"></script>
+    <script type="module" src="../dist/js/script.js"></script>
+    <script type="module" src="../dist/js/agentData.js"></script>
+
+</body>
+
+</html>
